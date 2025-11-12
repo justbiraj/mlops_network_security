@@ -7,7 +7,7 @@ import pandas as pd
 Data Ingestion related constant vaariables
 """
 
-DATA_INGESTION_COLLECTION_NAME: str = "network_data"
+DATA_INGESTION_COLLECTION_NAME: str = "NetworkData"
 DATA_INGESTION_DATABASE_NAME: str = "network_security_db"
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
