@@ -1,0 +1,9 @@
+[ 2025-11-13 10:53:49,371 ] 62 root - INFO - Performed train test split
+[ 2025-11-13 10:53:49,371 ] 63 root - INFO - exited split_data_as_train_test method of data_ingestion_class
+[ 2025-11-13 10:53:49,372 ] 68 root - INFO - Exporting train and test ffile path
+[ 2025-11-13 10:53:49,453 ] 74 root - INFO - Exported train test split
+[ 2025-11-13 10:53:49,453 ] 19 root - INFO - ingees comp
+[ 2025-11-13 10:53:49,571 ] 31 root - INFO - Required number of columns:2
+[ 2025-11-13 10:53:49,571 ] 32 root - INFO - DataFrame has column: 31
+[ 2025-11-13 10:53:49,572 ] 31 root - INFO - Required number of columns:2
+[ 2025-11-13 10:53:49,574 ] 32 root - INFO - DataFrame has column: 31
