@@ -41,10 +41,6 @@ class DataValidaion:
         try:
             status = True
             report = {}
-            print("-------------")
-            print(base_df.head())
-            print("-------------")
-            print(current_df.head())
 
             for column in base_df.columns:
                 d1 = base_df[column]
@@ -79,7 +75,6 @@ class DataValidaion:
             train_dataframe = DataValidaion.read_data(train_file_path)
             test_dataframe = DataValidaion.read_data(test_file_path)
 
-            print(test_dataframe)
 
             status = self.validate_number_of_column(dataframe=train_dataframe)
             if not status:
