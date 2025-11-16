@@ -26,7 +26,9 @@ from sklearn.ensemble import (
 import mlflow
 from urllib.parse import urlparse
 
-# import dagshub
+
+import dagshub
+# dagshub.init(repo_owner='justbiraj', repo_name='mlops_network_security', mlflow=True)
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
@@ -120,7 +122,14 @@ class ModelTrainer:
         Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
         #model pusher
-        save_object("final_model/model.pkl",best_model)
+        modellocation = "final_model/model.pkl"
+        save_object( modellocation ,best_model)
+        ## Track the experiements with mlflow
+        # self.track_mlflow(modellocation,classification_train_metric)
+        # self.track_mlflow(modellocation,classification_test_metric)
+
+
+
         
 
         ## Model Trainer Artifact
